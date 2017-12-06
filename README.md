@@ -32,7 +32,7 @@ In this step, you'll familarize yourself with the existing code base. Pay attent
 
 ### Summary
 
-In this step, we'll configure the router to handle all the other provided templates. The over provided templates are located in the feature folders ( `about`, `booked`, `locations`, `packages` ) in `app/`.
+In this step, we'll configure the router to handle all the other provided templates. The other provided templates are located in the feature folders ( `about`, `booked`, `locations`, `packages` ) in `app/`.
 
 ### Instructions
 
@@ -43,7 +43,7 @@ In this step, we'll configure the router to handle all the other provided templa
   * Name: `booked` - Url: `/booked/:id` - Template: `app/booked/bookedTmpl.html`.
   * Name: `adventurers` - Url: `/adventurers` - Template: `app/about/adventurers/adventurersTmpl.html`.
     * This route should be a sub-route of the home page.
-  * Name: `contact` - Url: `/contact` - Template: `app/contact/contactTmpl.html`.
+  * Name: `contact` - Url: `/contact` - Template: app/about/contact/contactTmpl.html`.
     * This route should be a sub-route of the home page.
 
 <details>
@@ -1139,7 +1139,7 @@ angular.module('devmtnTravel').controller('packagesCtrl', function( $scope, $sta
 });
 ```
 
-We can then use `$scope.packages` with an `ng-repeat` to show all the packages on the DOM. Let's open `app/packages/packagesTmpl.html` and locate the `section` element with the class of `package-card`. Let's add an `ng-repeat` through `packages` on this element. We will also the following elements inside of `package-card`:
+We can then use `$scope.packages` with an `ng-repeat` to show all the packages on the DOM. Let's open `app/packages/packagesTmpl.html` and locate the `section` element with the class of `package-card`. Let's add an `ng-repeat` through `packages` on this element.We will also add the following elements inside of `package-card`:
 
 * `img` element's `ng-src` to be the `package`'s image.
 * `img` element's `alt` to be the `package`'s country.
